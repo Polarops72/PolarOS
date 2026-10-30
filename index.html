@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body style="background-color: rgb(237, 237, 234); font-family: Andale Mono, monospace; color: black;
+                background-image: radial-gradient(gray 1px, transparent 1px); background-size: 18px 18px;">
+
+        <!-- Icônes du bureau -->
+        <div id="desktopApps">
+
+            <div class="icon" id="welcomeIcon">
+                <div class="iconimage">
+                    <div style="width: 14px; height: 14px; border-radius: 50%; background-color: red;"></div>
+                </div>
+                <p>Welcome</p>
+            </div>
+
+            <div class="icon" id="notesIcon">
+                <div class="iconimage" style="flex-direction: column; gap: 6px;">
+                    <div style="width: 32px; height: 3px; background-color: black;"></div>
+                    <div style="width: 32px; height: 3px; background-color: black;"></div>
+                    <div style="width: 20px; height: 3px; background-color: red;"></div>
+                </div>
+                <p>Notes</p>
+            </div>
+
+            <div class="icon" id="pongIcon">
+                <div class="iconimage" style="background-color: black; justify-content: space-between; padding: 0px 8px;">
+                    <div style="width: 4px; height: 20px; background-color: white;"></div>
+                    <div style="width: 8px; height: 8px; border-radius: 50%; background-color: red;"></div>
+                    <div style="width: 4px; height: 20px; background-color: white;"></div>
+                </div>
+                <p>Pong</p>
+            </div>
+
+        </div>
+
+
+        <!-- Fenêtre : Welcome (la même qu'avant) -->
+        <div class="window" id="welcome" style="width: 350px; padding: 16px; top: 24px; left: calc(50% - 191px);
+                    max-height: calc(100vh - 140px); overflow-y: auto;">
+
+            <div class="closebutton" id="welcomeclose"></div>
+
+            <h1 id="welcomeheader" class="handle" style="font-family: Doto, monospace; font-size: 44px;"> PolarOS </h1>
+            <h2> A tiny OS, built for fun hehe </h2>
+            <p> Here you are on the welcome page, double click the apps on the left to open them !</p>
+            <img style="width: 128px; height: 128px; border-radius: 24px; object-fit: cover;" src="./Coucoucoincoin.png" />
+            <h3> Isn't he beautiful..?</h3>
+            <p> This page is a work in progress, and maybe it will stay this way cause i like the style</p>
+            <p> Here is my instagram if people want to follow, i don't post anything but maybe i will someday,
+                and if someone comes by and text me they come from Stardance it will put a smile on my face hehe </p>
+            <a href="https://www.instagram.com/polarops_72/" style="color: red;">Follow on Instagram</a>
+            <p> Thanks for stopping by !</p>
+            <p>-------------</p>
+
+        </div>
+
+
+        <!-- Fenêtre : Notes -->
+        <div class="window" id="notes" style="width: 520px; padding: 16px; top: 60px; left: calc(50% - 276px); display: none;">
+
+            <div class="closebutton" id="notesclose"></div>
+
+            <h1 id="notesheader" class="handle" style="font-family: Doto, monospace; font-size: 36px; margin-top: 0px;"> Notes </h1>
+
+            <div style="display: flex; gap: 16px; height: 300px;">
+
+                <div style="width: 150px; display: flex; flex-direction: column; gap: 8px;">
+                    <button class="button" id="newnote"> + New note </button>
+                    <div id="sidebar" style="overflow-y: auto;"></div>
+                </div>
+
+                <div style="flex: 1; display: flex; flex-direction: column; gap: 8px;">
+                    <input id="notetitle" class="notefield" placeholder="Title" />
+                    <textarea id="notetext" class="notefield" style="flex: 1; resize: none;" placeholder="Write something hehe..."></textarea>
+                    <button class="button" id="deletenote" style="background-color: red;"> Delete </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Fenêtre : Pong -->
+        <div class="window" id="pong" style="width: 400px; padding: 16px; top: 80px; left: calc(50% - 216px); display: none;">
+
+            <div class="closebutton" id="pongclose"></div>
+
+            <h1 id="pongheader" class="handle" style="font-family: Doto, monospace; font-size: 36px; margin-top: 0px;"> Pong </h1>
+
+            <canvas id="pongcanvas" width="400" height="260" style="background-color: black; border-radius: 16px; display: block;"></canvas>
+
+            <p id="pongscore" style="font-family: Doto, monospace; font-size: 28px; text-align: center; margin: 12px 0px;"> 0 - 0 </p>
+
+            <div style="display: flex; justify-content: center; gap: 8px;">
+                <button class="button" id="pongauto"> Auto </button>
+                <button class="button" id="pongplayer" style="background-color: red;"> 1 Player </button>
+            </div>
+
+            <p style="font-size: 12px; text-align: center; color: gray;"> In 1 Player, move your mouse on the game (you are on the left) </p>
+
+        </div>
+
+
+        <!-- Barre du bas -->
+        <div id="bottom">
+            <p id="welcomeopen" style="cursor: pointer;"> PolarOS </p>
+            <p><time id="timeElement" datetime="">--:--:--</time></p>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
