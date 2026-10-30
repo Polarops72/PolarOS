@@ -1,4 +1,4 @@
-// ----- L'horloge (format 30/10/2026 8:23 PM) -----
+
 
 function updateTime() {
     var now = new Date();
@@ -22,7 +22,7 @@ updateTime();
 setInterval(updateTime, 1000);
 
 
-// ----- Déplacer les fenêtres (code du guide / W3 School) -----
+
 
 function dragElement(element) {
     var initialX = 0;
@@ -57,7 +57,7 @@ function dragElement(element) {
 }
 
 
-// ----- Ouvrir, fermer, mettre devant -----
+
 
 var biggestIndex = 1;
 var bottomBar = document.querySelector("#bottom");
@@ -78,7 +78,7 @@ function bringToFront(element) {
 }
 
 
-// ----- Les icônes -----
+
 
 var selectedIcon = undefined;
 
@@ -91,7 +91,6 @@ function selectIcon(element) {
 }
 
 
-// ----- Tout préparer pour une fenêtre en une ligne -----
 
 function initializeWindow(name) {
     var screen = document.querySelector("#" + name);
@@ -115,13 +114,12 @@ document.querySelector("#welcomeopen").addEventListener("click", function() {
 });
 
 
-// ----- App Notes (sauvegardées dans le navigateur) -----
 
 var notes = [
     { title: "Hello", date: "30/10/2026", text: "My first note hehe, you can write here and it stays saved !" }
 ];
 
-// Certaines previews bloquent la sauvegarde, alors on essaie sans tout casser
+
 try {
     var savedNotes = localStorage.getItem("polarNotes");
     if (savedNotes) {
@@ -194,7 +192,6 @@ document.querySelector("#deletenote").addEventListener("click", function() {
 showNote(0);
 
 
-// ----- App Pong -----
 
 var canvas = document.querySelector("#pongcanvas");
 var ctx = canvas.getContext("2d");
@@ -241,7 +238,7 @@ function resetBall() {
     document.querySelector("#pongscore").textContent = leftScore + " - " + rightScore;
 }
 
-// L'ordi suit la balle, un peu lentement pour qu'il rate parfois
+
 function moveComputer(paddleY) {
     var center = paddleY + paddleHeight / 2;
     if (center < ballY - 10) {
@@ -254,7 +251,7 @@ function moveComputer(paddleY) {
 }
 
 function updatePong() {
-    // Les raquettes
+
     if (!playerMode) {
         leftY = moveComputer(leftY);
     }
@@ -262,28 +259,27 @@ function updatePong() {
     leftY = Math.max(0, Math.min(canvas.height - paddleHeight, leftY));
     rightY = Math.max(0, Math.min(canvas.height - paddleHeight, rightY));
 
-    // La balle
     ballX = ballX + speedX;
     ballY = ballY + speedY;
 
-    // Rebond en haut et en bas
+
     if (ballY < 5 || ballY > canvas.height - 5) {
         speedY = -speedY;
     }
 
-    // Rebond sur la raquette de gauche
+  
     if (ballX < 20 && ballY > leftY && ballY < leftY + paddleHeight && speedX < 0) {
         speedX = -speedX;
         speedY = (ballY - (leftY + paddleHeight / 2)) / 8;
     }
 
-    // Rebond sur la raquette de droite
+
     if (ballX > canvas.width - 20 && ballY > rightY && ballY < rightY + paddleHeight && speedX > 0) {
         speedX = -speedX;
         speedY = (ballY - (rightY + paddleHeight / 2)) / 8;
     }
 
-    // Un point est marqué
+
     if (ballX < 0) {
         rightScore++;
         resetBall();
@@ -293,7 +289,7 @@ function updatePong() {
         resetBall();
     }
 
-    // Le dessin
+  
     ctx.fillStyle = "black";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 

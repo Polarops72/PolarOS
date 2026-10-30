@@ -1,4 +1,4 @@
-/* ----- Le bureau ----- */
+
 
 body {
     margin: 0px;
@@ -15,7 +15,7 @@ body {
 }
 
 
-/* ----- Les icônes ----- */
+
 
 .icon {
     text-align: center;
@@ -48,7 +48,7 @@ body {
 }
 
 
-/* ----- Les fenêtres (même style que la carte d'avant) ----- */
+
 
 .window {
     position: absolute;
@@ -74,7 +74,7 @@ body {
 }
 
 
-/* ----- Les boutons et champs ----- */
+
 
 .button {
     font-family: Andale Mono, monospace;
@@ -110,7 +110,7 @@ body {
 }
 
 
-/* ----- La barre du bas ----- */
+
 
 #bottom {
     display: flex;
