@@ -4,7 +4,7 @@ For this OS, I want to have a UI style based on Nothing ( the brand ),
 The functions are going to be : 
 
 - Notes
-- Music viewer (just a graphic for the sound and the picture of the album)
+- Pong game (player vs bot / bot vs bot)
 
 That's all for now i will maybe add some things later
 

@@ -30,7 +30,7 @@ body {
     height: 64px;
     box-sizing: border-box;
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid rgb(34, 34, 34);
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -44,7 +44,7 @@ body {
 
 .selected {
     background-color: white;
-    outline: 2px dashed red;
+    outline: 2px dashed rgb(122, 27, 27);
 }
 
 
@@ -53,7 +53,7 @@ body {
 .window {
     position: absolute;
     background-color: white;
-    border: 2px dashed black;
+    border: 2px dashed rgb(34, 34, 34);
     border-radius: 24px;
 }
 
@@ -69,7 +69,7 @@ body {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: red;
+    background-color: rgb(122, 27, 27);
     cursor: pointer;
 }
 
@@ -78,7 +78,7 @@ body {
 
 .button {
     font-family: Andale Mono, monospace;
-    background-color: black;
+    background-color: rgb(34, 34, 34);
     color: white;
     border: none;
     border-radius: 999px;
@@ -89,7 +89,7 @@ body {
 .notefield {
     font-family: Andale Mono, monospace;
     font-size: 14px;
-    border: 2px dashed black;
+    border: 2px dashed rgb(34, 34, 34);
     border-radius: 12px;
     padding: 8px;
 }
@@ -105,7 +105,7 @@ body {
 }
 
 .noteopen {
-    background-color: black;
+    background-color: rgb(34, 34, 34);
     color: white;
 }
 
@@ -120,7 +120,7 @@ body {
     left: 0px;
     right: 0px;
     padding: 0px 16px;
-    background-color: black;
+    background-color: rgb(34, 34, 34);
     color: white;
     font-family: Doto, monospace;
     font-size: 18px;
