@@ -4,7 +4,6 @@ A tiny OS that runs in your browser, built for fun hehe.
 
 I made this for the **WebOS** mission of [Stardance](https://stardance.hackclub.com/missions/web-os-1) by Hack Club. The idea was to build my own little operating system and to make it look like *mine*. I really like the style of Nothing (the brand), so I went for black and white, a dot grid everywhere, a dot-matrix font and a bit of dark red.
 
----
 
 ## What it does
 
