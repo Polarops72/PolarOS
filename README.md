@@ -9,11 +9,10 @@ I made this for the **WebOS** mission of [Stardance](https://stardance.hackclub.
 ## What it does
 
 ### The desktop
-- A dot grid background with a mountain hiding behind it (you have to look closely)
-- App icons on the left, all made with plain CSS, no images
+- A dot grid background with a mountain hiding behind it
+- App icons on the left
 - Click an icon to select it, double click to open the app
 - A bottom bar with the name of the OS and a live clock
-- Click "PolarOS" in the bottom bar to bring the welcome window back if you closed it
 
 ### The windows
 - You can move every window by grabbing its title
