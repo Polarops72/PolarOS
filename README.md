@@ -4,8 +4,6 @@ A tiny OS that runs in your browser, built for fun hehe.
 
 I made this for the **WebOS** mission of [Stardance](https://stardance.hackclub.com/missions/web-os-1) by Hack Club. The idea was to build my own little operating system with just HTML, CSS and JavaScript, and to make it look like *mine*. I really like the style of Nothing phones, so I went for black and white, a dot grid everywhere, a dot-matrix font and a bit of dark red.
 
-**Try it here:** [https://tonpseudo.github.io/polaros/](https://tonpseudo.github.io/polaros/)
-
 ---
 
 ## What it does
@@ -35,43 +33,3 @@ The first thing you see. It says hi, shows my mascot (isn't he beautiful..?) and
 - **Auto** mode: the computer plays against itself, you can just watch (it's weirdly relaxing)
 - **1 Player** mode: you're the paddle on the left, move your mouse over the game to play
 - The computer is a bit slow on purpose so it misses sometimes, so you actually have a chance
-
----
-
-## How to run it
-
-**Online:** just open the link above, nothing to install.
-
-**On your computer:**
-1. Download or clone this repo
-2. Keep all the files in the same folder
-3. Double click `index.html` and it opens in your browser
-
----
-
-## Files
-
-| File | What's inside |
-|---|---|
-| `index.html` | The desktop, the icons and all the windows |
-| `style.css` | The whole look (windows, icons, buttons, bottom bar) |
-| `script.js` | The clock, moving windows, the Notes app and Pong |
-| `Coucoucoincoin.png` | My mascot |
-| `montagne.jpg` | The mountain in the background |
-
----
-
-## Built with
-
-- HTML, CSS and JavaScript, nothing else
-- The [Doto](https://fonts.google.com/specimen/Doto) font from Google Fonts for the dot-matrix look
-- The Hack Club [WebOS guide](https://jams.hackclub.com/batch/webOS) as a starting point
-- Some help from Claude (AI) along the way
-
----
-
-## What's next
-
-Maybe more apps, maybe not, I kind of like it like this. If you have ideas, tell me on Instagram hehe
-
-Thanks for stopping by !
